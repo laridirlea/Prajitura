@@ -1,0 +1,53 @@
+public class Ingredient {
+	  public static final int length1 = 0;
+	  public static int length;
+	  protected String nume1;
+	  protected int cantitate;
+	  protected int unitate_masura;
+
+	Ingredient(String nume1, int cantitate, int unitate_masura) {
+		  this.nume1=nume1;
+		  this.cantitate=cantitate;
+		  this.unitate_masura=unitate_masura;
+		}
+	
+	public String getNume1()
+	{
+	   return this.nume1;
+	}
+	public void setNume1(String nume1)
+	{
+		
+		this.nume1=nume1;
+	}
+
+	
+	public int getCantitate()
+	{
+	return this.cantitate;
+	}
+	public void setCantitate(int cantitate)
+	{
+	this.cantitate=cantitate;
+	}
+	
+	
+
+	public int getUnitate_masura()
+	{
+	return this.unitate_masura;
+	}
+	public void setUnitate_masura(int unitate_masura)
+	{
+		this.unitate_masura=unitate_masura;
+	}
+	public int getCantitate1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public int getUnitate_masura1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
