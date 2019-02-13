@@ -1,0 +1,16 @@
+import java.util.Comparator;
+
+public class PrajituraSorter implements Comparator<Prajitura>{
+	 public int compare(Prajitura one, Prajitura another){
+	        int returnVal = 0;
+
+	    if(one.getIngrediente().size() < another.getIngrediente().size()){
+	        returnVal =  -1;
+	    }else if(one.getIngrediente().size() > another.getIngrediente().size()){
+	        returnVal =  1;
+	    }else if(one.getIngrediente().size() == another.getIngrediente().size()){
+	        returnVal =  0;
+	    }
+	    return returnVal;
+	    }
+}
