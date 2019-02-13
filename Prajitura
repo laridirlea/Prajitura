@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Prajitura {
+  protected String nume;
+  protected int pret;
+  protected int timp;
+  protected int numarIngrediente;
+  protected ArrayList<Ingredient> ingrediente = new ArrayList<Ingredient>();
+  
+public Prajitura(String nume, int pret,int timp, int numarIngrediente, ArrayList<Ingredient> ingrediente) {
+	  this.nume=nume;
+	  this.pret=pret;
+	  this.timp=timp;
+	  this.ingrediente = ingrediente;
+	}
+
+public String getNume(){
+	return this.nume;
+}
+
+public void setNume(String nume){
+	this.nume = nume;
+}
+
+public int getTimp(){
+	return this.timp;
+}
+
+public void setTimp(int timp){
+	this.timp = timp;
+}
+
+public int getPret(){
+	return this.pret;
+}
+public void setPret(int pret){
+	this.pret = pret;
+}
+
+public ArrayList<Ingredient> getIngrediente() {
+	return ingrediente;
+}
+
+public void setIngrediente(ArrayList<Ingredient> ingrediente) {
+	this.ingrediente = ingrediente;
+}
+
+
+
+
+}
