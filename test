@@ -1,0 +1,47 @@
+package student;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class test {
+  
+
+public static void main(String [] args)
+  {
+			Ingredient[] vs = new Ingredient[3];
+			
+			vs[0] = new Ingredient("zahar",200, 0);
+			vs[1] = new Ingredient("faina",120, 0);
+			vs[2] = new Ingredient("oua",400, 0);
+			
+			ArrayList<Ingredient> ingrediente = new ArrayList<Ingredient>();
+			ArrayList<Ingredient> ingrediente2 = new ArrayList<Ingredient>();
+			ArrayList<Prajitura> prajituri = new ArrayList<Prajitura>();
+			
+			ingrediente.add(vs[0]);
+			ingrediente.add(new Ingredient("Ciocolata",2,3));
+			
+			ingrediente2.add(vs[1]);
+			
+			Prajitura praji = new Prajitura("Vanilie",2,3,4,ingrediente);
+			
+			prajituri.add(praji);
+			prajituri.add(new Prajitura("iCioco",3,4,5,ingrediente2));
+			
+			Collections.sort(prajituri, new PrajituraSorter());
+			
+			
+		 for(int i = 0;i<vs.length;i++)
+		 {
+		 System.out.println(vs[i].getNume1() + " " + vs[i].getCantitate1() + " " + vs[i].getUnitate_masura1());
+		 }
+		 
+		 for(Prajitura p : prajituri) {
+			 System.out.println(p.getNume() + " " + p.getIngrediente().size());
+		 }
+		 
+  };
+
+}
